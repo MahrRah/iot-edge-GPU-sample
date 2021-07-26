@@ -18,6 +18,6 @@ variable "edge_vm_password" {
 
 variable "edge_vm_sku" {
   type = string
-  default = "Standard_NC4as_T4_v3" # The default is for GPU enabled VMs
+  default = "Standard_DS1_v2" # "Standard_NC4as_T4_v3"  The default is for GPU enabled VMs
   
 }

@@ -22,3 +22,7 @@ variable "vm_sku" {
 variable "edge_vm_name" {
   type = string
 }
+
+variable "device_connection_string" {
+  type = string
+}

@@ -8,4 +8,7 @@ output "iot_hub_id" {
   value = azurerm_iothub.example.id
 }
 
-
+output "device_connection_string" {
+  value     = shell_script.register_iot_edge_device.output["connectionString"]
+  sensitive = true
+}
