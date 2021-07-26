@@ -81,7 +81,7 @@ resource "tls_private_key" "vm_ssh" {
 
 resource "local_file" "ssh" {
   sensitive_content = tls_private_key.vm_ssh.private_key_pem
-  filename          = "../../.ssh/id_rsa"
+  filename          = "../.ssh/id_rsa"
   file_permission   = "600"
 }
 

@@ -9,15 +9,9 @@ variable "edge_vm_user_name" {
   default = "" # The default value is empty, but in the usages of this variable it will be overridden by a generated value if left empty.
 }
 
-# Password of the IoT Edge VM
-variable "edge_vm_password" {
-  type      = string
-  sensitive = true
-  default   = "" # The default value is empty, but in the usages of this variable it will be overridden by a generated value if left empty.
-}
 
 variable "edge_vm_sku" {
-  type = string
+  type    = string
   default = "Standard_DS1_v2" # "Standard_NC4as_T4_v3"  The default is for GPU enabled VMs
-  
+
 }

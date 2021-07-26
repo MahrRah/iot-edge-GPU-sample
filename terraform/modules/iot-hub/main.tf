@@ -10,7 +10,7 @@ terraform {
 provider "shell" {}
 
 locals {
-  iot_edge_id          = "${var.resource_prefix}-edge-device"
+  iot_edge_id = "${var.resource_prefix}-edge-device"
 }
 
 data "azurerm_subscription" "current" {
@@ -57,7 +57,7 @@ resource "shell_script" "register_iot_edge_device" {
     read   = "$SCRIPT read"
     delete = "$SCRIPT delete"
   }
-  
+
 
   environment = {
     IOT_HUB_NAME         = azurerm_iothub.example.name
