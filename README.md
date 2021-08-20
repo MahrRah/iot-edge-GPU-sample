@@ -9,9 +9,7 @@ Terraform template to provision an IoT Hub and an virtual IoT Edge device with a
 
 ## Run sample
 
-The following instruction are all done in the directory `terraform`
-
-Run `terraform init` to initialize terraform and `terraform apply` to create resources.
+Change to the directory `terraform` and run `terraform init` to initialize terraform and `terraform apply` to create all the resources.
 
 This should result in an terraform output  containing the following values.
 
@@ -24,4 +22,4 @@ iot_edge_vm_public_ssh = "ssh -i ../../.ssh/id_rsa <vm-username>@<prefix>-iot-ed
 iot_hub_name = "<prefix>-iot-hub"
 ```
 
-The ssh private key key should also be stored under the generated `.ssh` directory in root.s
+The ssh private key key should also be stored under the generated `.ssh` directory in root.
